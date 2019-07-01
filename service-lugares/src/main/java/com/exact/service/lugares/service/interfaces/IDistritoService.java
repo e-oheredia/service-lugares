@@ -11,4 +11,5 @@ public interface IDistritoService {
 	Iterable<Distrito> listarByIds(List<Long> ids);
 	Iterable<Distrito> listarByProvinciaId(Long provinciaId);
 	Iterable<Distrito> listarAll();
+	Iterable<Distrito> listarDistritosIdsByUbigeos(List<String> ubigeos);
 }

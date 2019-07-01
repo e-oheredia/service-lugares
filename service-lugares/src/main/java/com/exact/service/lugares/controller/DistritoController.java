@@ -45,4 +45,9 @@ public class DistritoController {
 		return new ResponseEntity<Iterable<Distrito>>(distritoService.listarAll(), HttpStatus.OK);
 	}
 	
+	@GetMapping(params="ubigeos")
+	public ResponseEntity<Iterable<Distrito>> listarDistritosIdsPorUbigeos(@RequestParam List<String>  ubigeos){
+		return new ResponseEntity<Iterable<Distrito>>(distritoService.listarDistritosIdsByUbigeos(ubigeos), HttpStatus.OK);
+	}
+	
 }
