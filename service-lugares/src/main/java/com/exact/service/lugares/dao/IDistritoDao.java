@@ -11,6 +11,7 @@ import com.exact.service.lugares.entity.Provincia;
 
 @Repository
 public interface IDistritoDao extends CrudRepository<Distrito, Long> {
+	
 	@Query(value="SELECT * FROM distrito where provincia_id = ?1", nativeQuery=true)
 	public Iterable<Distrito> findAllByProvinciaId(Long provinciaId);
 	
