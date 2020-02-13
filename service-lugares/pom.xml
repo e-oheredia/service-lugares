@@ -7,7 +7,7 @@
 	<groupId>com.exact</groupId>
 	<artifactId>service-lugares</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
-	<packaging>war</packaging>
+	<packaging>jar</packaging>
 
 	<name>service-lugares</name>
 	<description>Proyecto para el catalogo de lugares</description>
@@ -53,6 +53,11 @@
 		<dependency>
 			<groupId>com.fasterxml.jackson.core</groupId>
 			<artifactId>jackson-core</artifactId>
+		</dependency>
+		<dependency>
+			<groupId>net.bytebuddy</groupId>
+			<artifactId>byte-buddy</artifactId>
+			<version>1.9.3</version><!--$NO-MVN-MAN-VER$ -->
 		</dependency>
 	</dependencies>
 
